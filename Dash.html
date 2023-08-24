@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zookeeper Form</title>
+    <style>
+        body {
+            display: inline-block;
+            padding: 10px;
+            width: 700px;
+        }
+
+        fieldset {
+            margin: 20px 8px;
+            border-radius: 5px;
+        }
+
+        .box {
+            display: inline-block;
+            width: 100px;
+            margin: 14px 0px;
+        }
+
+        .in-box {
+            width: 300px;
+            border-radius: 4px;
+        }
+
+        label {
+            display: inline-block;
+            width: 24%;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin-bottom: -8px;
+        }
+
+        .submit {
+            padding: 10px 25px;
+            margin-left: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>Zoo Keeper Application Form</h1>
+        <p><i>Please complete the form. Mandatory Fields are marked with a *</i></p>
+
+        <fieldset>
+            <legend><b>CONTACT DETAILS</b></legend>
+            <p class="box">Name *</p>
+            <input type="text" class="in-box" name="name" required><br>
+            <p class="box">Telephone</p>
+            <input type="tel" class="in-box" name="tel"><br>
+            <p class="box">Email *</p>
+            <input type="email" class="in-box" name="email" required>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>PERSONAL INFORMATION</b></legend>
+            <p class="box">* Age</p>
+            <input type="number" class="in-box" name="age" required><br>
+            <p class="box">Gender</p>
+            <select name="gneder" class="in-box">
+                <option selected>Male</option>
+                <option >Female</option>
+                <option>Others</option>
+            </select> <br>
+            <p class="box">When did you first know you wanted to be a zoo-keeper?</p>
+            <textarea name="comment" cols="38" rows="5"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend><b>PICK YOUR FAVORITE ANIMALS</b></legend>
+            <label for="1">
+                <input type="checkbox" id="1">
+                Zebra
+            </label>
+            <label for="2">
+                <input type="checkbox" id="2">
+                Cat
+            </label>
+            <label for="3">
+                <input type="checkbox" id="3">
+                Anaconda
+            </label>
+            <label for="4">
+                <input type="checkbox" id="4">
+                Human
+            </label>
+            <label for="5">
+                <input type="checkbox" id="5">
+                Elephant
+            </label>
+            <label for="6">
+                <input type="checkbox" id="6">
+                Wildebeest
+            </label>
+            <label for="7">
+                <input type="checkbox" id="7">
+                Pigeon
+            </label>
+            <label for="8">
+                <input type="checkbox" id="8">
+                Crab
+            </label>
+        <input type="submit" class="submit" value="Submit">
+
+    </form>
+</body>
+
+</html>
